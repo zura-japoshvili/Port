@@ -14,7 +14,7 @@ body {
 }
 .title-bar-section p{
     position: absolute;
-    left: 50%;
+    left: 55%;
     color: #efefef;
     font-size: 13px;
 }
@@ -160,7 +160,6 @@ body {
 .home-container{
     position: relative;
     display: flex;
-    flex-wrap: wrap;
 }
 .main-content-home{
     position: relative;
@@ -258,4 +257,74 @@ body {
 }
 .footer-right-side{
     right: 20px;
+}
+
+
+@media screen and (max-width: 1024px){
+    .explorer{
+        width: 150px;
+    }
+}
+@media screen and (max-width: 960px) {
+    .main-content-home,.main-content-skills{
+        left: 50px;
+    }
+}
+@media  screen and (max-width: 800px) {
+    .main-content-skills,.main-content-home{
+        left: 20px;
+    }
+}
+@media screen and (max-width: 760px) {
+    .home-container{
+        flex-direction: column;
+        width: fit-content;
+        height: fit-content;
+    }
+    .main-content-skills,.main-content-home{
+        top: 40px;
+        left: 100px;
+    }
+}
+@media screen and (max-width: 650px){
+    .title-ul{
+        display: none;
+    }
+    .explorer{
+        display: none;
+    }
+    .title-bar-section p{
+        left: 40%;
+    }
+}
+@media screen and (max-width: 540px) {
+    .nav-li{
+        padding: 0 5px;
+        font-size: 14px;
+    }   
+}
+@media screen and (max-width: 480px) {
+    .main-content-home,.main-content-skills{
+        left: 50px;
+    }
+    .a-side-icon{
+        font-size: 18px;
+    }    
+}
+@media screen and (max-width: 440px) {
+    .nav-li{
+        font-size: 10px;
+    }
+    .skills-li{
+        margin: 0 2px;
+        padding: 2.5px 7.5px;
+    }
+}
+@media  screen and (max-width: 340px) {
+    .main-content-home,.main-content-skills{
+        left: 20px;
+    }
+    .nav-li{
+        font-size: 9px;
+    }
 }
