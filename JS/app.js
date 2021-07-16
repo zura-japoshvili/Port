@@ -18,18 +18,28 @@ function explorerClickFunc() {
 
 function resetPagesValues(arg){
     home_content = document.getElementById("main-content-home");
-    main_skills = document.getElementById("main-content-skills");
+    home_jsx = document.getElementById("home_jsx");
     house_icon = document.getElementById("house_icon");
     home_content.style.display = "none";
     house_icon.classList.remove("a-side-active-page");
     home_jsx.classList.remove("nav-active-page");
 
+    main_skills = document.getElementById("main-content-skills");
     about_icon = document.getElementById("about_icon");
-    home_jsx = document.getElementById("home_jsx");
     about_html = document.getElementById("about_html");
     main_skills.style.display = "none";
     about_icon.classList.remove("a-side-active-page")
     about_html.classList.remove("nav-active-page")
+
+    main_projects = document.getElementById("main-content-projects");
+    projects_js = document.getElementById("projects-js");
+    projects_icon = document.getElementById("projects-icon");
+    main_projects.style.display = "none";
+    projects_icon.classList.remove("a-side-active-page");
+    projects_js.classList.remove("nav-active-page");
+
+
+
 
     const page  = arg;
     pageHidderFunc(page);
@@ -44,6 +54,10 @@ function pageHidderFunc(page){
         window.main_skills.style.display = "flex";
         window.about_icon.classList.add("a-side-active-page");
         window.about_html.classList.add("nav-active-page");
+    }else if(hidder === "projects"){
+        window.main_projects.style.display = "flex";
+        window.projects_icon.classList.add("a-side-active-page");
+        window.projects_js.classList.add("nav-active-page");
     }
 
 }

@@ -23,6 +23,7 @@ body {
 .nav-active-page{
     background-color: #1e1e1e;
     border-top: 2px solid indianred;
+    border-left: 2px solid indianred;
 }
 .a-side-active-page{
     border-left: 2px solid indianred;
@@ -102,7 +103,7 @@ body {
 }
 .a-side-icon{
     margin-bottom: 20px;
-    font-size: 25px;
+    font-size: 22px;
     cursor: pointer;
 }
 
@@ -185,7 +186,7 @@ body {
 }
 .main-content-home{
     position: relative;
-    display: none;
+    display: flex;
     flex-direction: column;
     color: var(--white-font);
     top: 100px;
@@ -296,6 +297,7 @@ body {
 
 /* The Beginning of the "project.js" */
 .main-content-projects{
+    display: none;
     width: 100%;
     height: 550px;
     background-image: linear-gradient(90deg, #1e1e1e, #313030);
